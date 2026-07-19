@@ -27,6 +27,17 @@
         li {
             margin-bottom: 10px;      /* 箇条書きの間隔を広げる */
         }
+
+/* ページ全体を反転 */
+html {
+    filter: invert(1) hue-rotate(180deg);
+}
+
+/* 画像、動画、埋め込みコンテンツを再反転して元に戻す */
+img, video, iframe, canvas {
+    filter: invert(1) hue-rotate(180deg);
+}
+         
     </style>
 </head>
 <body>
